@@ -18,7 +18,7 @@ PyDirectInput
 2. A bounding box is drawn over the bobber detected
 3. When the Y-axis increases this signifies a the bobber dropping
 4. A keystroke simulating reeling and casting
-5. Repeats from 2-4 until instance is terminated
+5. Repeats from 2-4 unless terminated
 ```
 
 ## ScreenCapture
