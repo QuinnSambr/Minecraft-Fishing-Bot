@@ -16,7 +16,7 @@ def screen():
     while True:
         begin_time = time()
         stream_image = np.array(sct.grab(mon))
-        np.shape(stream_image)
+
                              # The Event Loop
         event, values = window.read()   
         if event == sg.WIN_CLOSED or event == 'Exit':
@@ -24,7 +24,7 @@ def screen():
         
 
         window.FindElement('image').Update(data=stream_image)        
-
+        print("Test")
     window.close()
 
 
