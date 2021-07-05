@@ -18,7 +18,7 @@ def capture_screen():
     """
     loop_time = time()
     with mss() as sct:
-            monitor = {"top": 40, "left": 0, "width": 800, "height": 640}
+            monitor = {'top': 100, 'left':200, 'width':600, 'height':480}
     while True:
         # Captures window and converts into numpy array
         window_capture = np.array(sct.grab(monitor))
@@ -31,6 +31,7 @@ def capture_screen():
         window_capture.save(window_capture_inMemory,format='PNG')
         window_capture_bytes=window_capture_inMemory.getvalue()
         return window_capture_bytes
+
         
 def main():
     """
